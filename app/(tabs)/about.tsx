@@ -1,13 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Link } from "expo-router";
-
-export default function Index() {
+export default function About() {
   return (
     <View style={styles.container}>
-      <Text>HELLO WORLD</Text>
-      <Link href="/about" style={styles.button}>
-        Go to about screen
-      </Link>
+      <Text>About Screen</Text>
     </View>
   );
 }
@@ -18,9 +13,5 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-  },
-  button: {
-    color: "white",
-    textDecorationLine: "underline",
   },
 });
